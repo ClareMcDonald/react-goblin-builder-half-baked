@@ -28,9 +28,15 @@ function App() {
       hp: goblinFormHP,
       color: goblinFormColor
     };
+
     // update the allGoblins array. Add the new goblin to the allGoblins array immutably.
-    
+    setGoblins([...goblins, newGoblin]);
+
     // clear out the goblin form state items by setting them to empty strings. This will cause the form to reset in the UI.
+    setGoblinFormName('');
+    setGoblinFormHP('');
+    setGoblinFormColor('');
+
   }
 
   function handleDeleteGoblin(id) {
