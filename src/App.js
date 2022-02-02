@@ -13,7 +13,7 @@ function App() {
       // goblinFormName, which is how we track the user input for the current name of the goblin in the form
   const [goblinFormName, setGoblinFormName] = useState('');
       // goblinFormHP, which is how we track the user input for the current HP of the goblin in the form
-  const [goblinFormHP, setGoblinFormHP] = useState('');
+  const [goblinFormHP, setGoblinFormHP] = useState(1);
       // goblinFormColor, which is how we track the user input for the current color of the goblin in the form
   const [goblinFormColor, setGoblinFormColor] = useState('');
 
@@ -34,7 +34,7 @@ function App() {
 
     // clear out the goblin form state items by setting them to empty strings. This will cause the form to reset in the UI.
     setGoblinFormName('');
-    setGoblinFormHP('');
+    setGoblinFormHP(1);
     setGoblinFormColor('');
 
   }
